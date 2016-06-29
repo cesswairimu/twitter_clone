@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jina: MyString
+  pepe: MyString
+
+two:
+  jina: MyString
+  pepe: MyString
