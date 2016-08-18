@@ -12,7 +12,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get help" do
-    get hel:p_url
+    get help_url
     assert_response :success
   end
 
