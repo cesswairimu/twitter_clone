@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
+      flash[:mmmh]="You made it"
     else 
       render 'new'
     end
