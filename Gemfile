@@ -30,11 +30,13 @@ group :production do
 	
 end
 group :test do
+gem 'byebug'
 gem 'minitest-reporters'
-	gem 'mini_backtrace'
+gem 'mini_backtrace'
 end
 
 group :development do
+  gem 'byebug'
   gem 'web-console'
   gem 'guard-minitest'
   gem 'guard'
