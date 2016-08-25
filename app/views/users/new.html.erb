@@ -1,5 +1,7 @@
 <h1>Users#new</h1>
-<% form_for(@user) do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name, placeholder: "Name" %>
+<%= form_for(@user) do |f| %>
+    <%= f.label :jina %>
+    <%= f.text_field :jina, placeholder: "Name" %>
+    <%= f.label :pepe %>
+    <%= f.email_field :pepe, placeholder: "Email" %>
     <% end %>
