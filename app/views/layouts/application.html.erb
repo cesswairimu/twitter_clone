@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <%= render 'layouts/header' %>
- 
-    <title><%= yield(:title) %> | TwitterClone</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-        <div class="cointainer">
-    </header>
+    <head>
+        <%= render 'layouts/header' %>
 
-<%= yield %>
-<%= render 'layouts/footer' %>
-</body>
+        <title><%= yield(:title) %> | TwitterClone</title>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+        <%= render 'layouts/shim' %>
+    </head>
+    <body>
+        <%= render 'layouts/header' %>
+        <div class="cointainer">
+            <%= yield %>
+            <%= render 'layouts/footer' %>
+            </div>
+    </body>
 </html>
