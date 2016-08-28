@@ -41,11 +41,18 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (7.0.0)
+    autoprefixer-rails (6.3.7)
+      execjs
     babel-source (5.8.35)
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
     bcrypt (3.1.11)
+    bootstrap-sass (3.3.6)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
+    bootstrap-will_paginate (0.0.10)
+      will_paginate
     builder (3.2.2)
     byebug (9.0.5)
     carrierwave (0.11.2)
@@ -370,6 +377,8 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt
+  bootstrap-sass
+  bootstrap-will_paginate
   byebug
   carrierwave
   coffee-rails (~> 4.1.0)
