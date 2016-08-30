@@ -1,8 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-li {
-    display: inline
+.nav{
+    li {
+        display: inline
+    }
 }
 
 
@@ -10,4 +12,28 @@ body {
     padding-top: 60px;
 
 }
-
+.center {
+    h1{
+        margin-bottom:10px;
+    }
+}
+h1{
+    text-align:center;
+    color:#669966;
+}
+footer{
+    background-color:grey;
+    color:black;
+    font-size: 1.3em;
+    margin-top:45px;
+    padding-top:5px;
+    border-top:1px solid white;
+    ul {
+        float:right;
+        list-style:none;
+        li{
+            float:left;
+            margin-left:15px;
+        }
+    }
+}
