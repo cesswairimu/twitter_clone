@@ -1,5 +1,6 @@
 require 'test_helper'
 
+
 class UserTest < ActiveSupport::TestCase
   def setup
     @user = User.new(jina: "Robin", pepe: "robin@gmail.com", password: "lawrence", 
@@ -24,7 +25,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "password should be identical to password confirmation"do
-  #@user.password !== @user.password_confirmation
-  assert_not @user.valid?
-end
+    !@user.password = @user.password_confirmation
+    assert_not  @user.valid?
+  end
 end
