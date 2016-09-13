@@ -1,0 +1,18 @@
+<h1>Edit info</h1>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <%= form_for(@user) do |f| %>
+            <%= render 'layouts/errors' %>
+            <%= f.label :jina %>
+            <%= f.text_field :jina, placeholder: "Name" %>
+            <%= f.label :pepe %>
+            <%= f.email_field :pepe, placeholder: "Email" %>
+            <%= f.label :password %>
+            <%= f.password_field :password, placeholder: "Password" %>
+            <%= f.label :password_confirmation %>
+            <%= f.password_field :password_confirmation, placeholder: "Confirm password" %>
+            <%= f.submit "Update" %>
+        <% end %>
+
+    </div>
+</div>
