@@ -25,7 +25,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "password should be identical to password confirmation"do
-    !@user.password = @user.password_confirmation
-    assert_not  @user.valid?
+    @user.password = @user.password_confirmation
+    assert  @user.valid?
   end
 end
