@@ -9,6 +9,7 @@ class UsersController < ApplicationController
       flash[:mmmh]="You made it"
       redirect_to @user
     else 
+      flash[:nasty]= "You have errors"
       render 'new'
     end
   end
